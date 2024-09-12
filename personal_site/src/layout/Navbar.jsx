@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <div className="navbar bg-base-100 sticky top-0">
       <div className="navbar-start">
-        <a className="text-xl pl-5">Orion Cable</a>
+        <a className="text-xl pl-12 font-bold">Orion Cable</a>
       </div>
 
       <div className="navbar-center hidden lg:flex"></div>
@@ -56,6 +56,11 @@ function Navbar() {
       </div>
 
       <ul className="menu menu-horizontal flex-nowrap px-1 pr-5 xs:hidden">
+        <li>
+          <Link to="landing" smooth={true} duration={1000}>
+            Home
+          </Link>
+        </li>{" "}
         <li>
           <Link to="about" smooth={true} duration={1000}>
             About
